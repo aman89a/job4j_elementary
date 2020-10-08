@@ -6,7 +6,7 @@ public class Point {
         double y = (y1 - y2);
         double qvadX = Math.pow(x, 2);
         double qvadY = Math.pow(y, 2);
-        double rsl = qvadX + qvadY;
+        double rsl = Math.pow(qvadX + qvadY, 2);
         return rsl;
     }
 
