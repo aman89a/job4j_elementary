@@ -7,10 +7,7 @@ public class Matrix {
         int[][] table = new int[size][size];
         for (int i = 0; i < table.length; i++) {
             for (int j = 0; j < table.length; j++) {
-                temp = (++i) * (++j);
-                --j;
-                --i;
-                table[i][j] = temp;
+                table[i][j] = (i + 1) * (j + 1);
             }
         }
         return table;
