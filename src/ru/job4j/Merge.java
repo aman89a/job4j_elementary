@@ -19,18 +19,10 @@ public class Merge {
                 int a = left[i];
                 rsl[k] = a;
                 i++;
-            } else if (right[j] < left[i]) {
+            } else {
                 int a = right[j];
                 rsl[k] = a;
                 j++;
-            } else if (k > left.length - 1) {
-                int a = right[j];
-                rsl[k] = a;
-                j++;
-            } else if (k > right.length - 1) {
-                int a = left[i];
-                rsl[k] = a;
-                i++;
             }
         }
         return rsl;
